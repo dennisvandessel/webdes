@@ -1,0 +1,49 @@
+<div class="header">
+
+
+    <div class="header-desktop">
+        <div class="page-row-no-space header">
+            <div class="container-fluid" >
+                <div class="row">
+                   
+                        <div class="col-md-12 header-line-1" invp (inViewport)="onInViewportChange($event)" >
+                            <div class="header-flexcontainer">   
+                                <div class="flex header-logo">
+                                     
+                                    <a [routerLink]="['/home']">
+                                        <img class="" src="../../img/webdes_logo.png" alt="WebDes - webdesign Dennis Van Dessel">     
+                                    </a>
+                                            
+                                </div>
+                                <div class="flex header-info">
+                                    Webdesign Dennis Van Dessel
+                                </div>
+                            </div>
+                        </div>    
+                
+                
+        
+                </div> 
+                <div [class.menu-hidden]="showFixedHeader">
+                    <wd-headermenu></wd-headermenu>     
+                </div>
+                  
+            </div>
+        </div>
+
+
+        <div class="page-row-no-space header-fixed" [class.header-fixed-show]="showFixedHeader"> 
+            <div class="container-fluid">
+                <wd-headermenu></wd-headermenu>      
+            </div>
+        </div>
+    </div>
+
+    
+        <div class="page-row-no-space header-mobile"> 
+                <div class="container-fluid">
+                    <wd-headermenu></wd-headermenu>      
+                </div>
+        </div>
+  
+</div>

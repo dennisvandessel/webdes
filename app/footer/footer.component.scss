@@ -1,0 +1,118 @@
+@import "../../styles/vars";
+
+
+.footer {
+    //background-color: $color-green-min1;
+    background: radial-gradient($color-green-min2, $color-green-min1);
+    color: $color-green-plus4;
+
+    a {
+        text-decoration: none;
+        color: $color-white;
+    }
+    a:hover {
+        color: $color-orange;
+    }
+    
+    .menu {
+        text-align: left;
+
+        .hoofding {
+            color: $color-green-min4;
+            font-size: $font-h3;
+            padding-bottom: $space-small;
+            text-transform: uppercase;
+        }
+
+        .flexcontainer {
+            display: flex;
+            flex-direction: column;
+        }
+        .flexitem {
+            padding-bottom: 5px;
+
+            .fa {
+                color: $color-green-min3;
+            }
+        }
+
+        .flexitem:last-child 
+        {
+            padding-bottom: 0;
+        }
+
+      
+    }
+    @media only screen and (max-width : $sm-max) {
+        .menu {
+            text-align: center; 
+        }
+    }
+
+    .logo {
+        text-align: center;
+        padding-top: 48px;
+        .logo-image {
+            padding-bottom: $space-medium;
+            img {
+                width: 100px;
+            }
+        }
+        
+         .webdes-logo {
+            color: $color-orange-min3;
+         }
+         .webdes-logo-ign {
+            color: $color-orange-min4;
+         }
+    }
+
+    .follow-section {
+        text-align: right;
+        @media only screen and (max-width : $sm-max) {
+     
+            text-align: center; 
+        }
+       
+
+        a:hover {
+            color: $color-green-plus2;
+        }
+
+         .volg-mij {
+             color: $color-green-plus4;
+            font-style: italic;
+            font-size: $font-text-min1;
+            padding-bottom: $space-small;
+         }
+         
+        }
+
+        
+
+        .flexcontainer {
+            justify-content: flex-end;
+
+                    @media only screen and (max-width : $sm-max) {
+                        justify-content: center;
+                    }
+           
+            .flex {
+
+                .popup {
+                    background-color: $color-green-min4;
+                    color: $color-green-plus2;
+                }                
+            }
+
+        
+        }
+
+
+}
+
+
+.copyright {
+    text-align: right;
+
+}

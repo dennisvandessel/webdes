@@ -1,0 +1,50 @@
+<div class="row headermenu">
+        
+ 
+            <div class="col-md-12 header-line-2">
+                <div class="headermenu-flexcontainer">   
+                    <div class="flex header-logo-tekst">
+                        <a [routerLink]="['/home']">
+                        <span class="webdes-logo">WEBDES</span><span class="webdes-logo-ign">ign</span>           
+                        </a>
+                    </div>
+                    <div class="flex-1 header-menu">
+                       
+                                <wd-menu [menuitems]="menuitems"></wd-menu>
+                    </div>
+                    <div class="flex header-menu-popup">
+    
+                        <button class="btn btn-transparent-icon">
+                            <i *ngIf="!showMenu" class="fa fa-bars" aria-hidden="true" (click)="toggleMenu()"></i>
+                            <i *ngIf="showMenu" class="fa fa-close" aria-hidden="true" (click)="toggleMenu()"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+</div>
+
+
+<div class="headermenu-mobile" [class.headermenu-mobile-show]="showMenu">
+            <div class="headermenu-mobile-flexcontainer">
+                <div class="flexitem webdes">
+
+                    <a [routerLink]="['/home']">
+                            <span class="webdes-logo">WEBDES</span><span class="webdes-logo-ign">ign</span>           
+                    </a>
+
+                </div>
+                <div *ngFor="let item of menuitems" class="flexitem">
+
+                        <a [routerLink]="[item.path]">{{item.label}}</a>
+                </div>  
+
+
+                <div class="flexitem logo">
+                        
+                    <a [routerLink]="['/home']">
+                        <img class="" src="../../img/webdes_logo.png" alt="WebDes - webdesign Dennis Van Dessel">     
+                    </a>
+                            
+                </div>
+            </div>
+</div>

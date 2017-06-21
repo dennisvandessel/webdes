@@ -1,0 +1,108 @@
+@import "../../styles/vars";
+@import "../../styles/mixins";
+
+.timeitem {
+    width: 100%;
+    position: relative;
+
+    .circle {
+        position: absolute;
+        left: 0;
+        top: 5px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px; 
+        background-color: $color-green;
+        z-index: 999;
+        font-size: $font-text-min1;
+        color: $color-white;
+        padding-top: 10px;
+        text-align: center;
+        padding-left: 2px;
+
+    } 
+
+    .line {
+        position: absolute;
+        left: 25px;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background-color: $color-green-min1;
+
+        z-index: 998;
+    }
+
+    .content {
+        margin-left: 85px;
+        position: relative;
+        text-align: left;
+        
+        
+        .arrow {
+            position: absolute;
+            top: 20px;
+            left: -20px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 10px 20px 10px 0;
+            border-color: transparent $color-green transparent transparent;
+        }
+
+        .header {
+            position: relative;
+            padding: $space-small $space-medium $space-small $space-medium;
+            color: $color-white;
+            background-color: $color-green;
+            background-image: none;
+
+            .container {
+                padding: 0;
+                margin: 0;
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+
+                @media only screen and (max-width : $xs-max){
+                    display: block;
+                }  
+            }
+
+            .name {
+                flex: 1;
+                font-size: $font-h3;
+            }
+
+            .period {
+                flex: none;
+                text-align: right;
+                 @media only screen and (max-width : $xs-max){
+                    text-align: left;
+                    padding-top: $space-small;
+                }  
+            }
+        }
+        .detail {
+            background-color: $color-green-min4;
+            background-image: url("../../img/green-min1.png");
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+
+            padding: $space-medium;
+            color: $color-green-plus4;
+
+        }
+
+        .space {
+            height: $space-large;
+        }
+
+    }
+
+
+}
+
+
+

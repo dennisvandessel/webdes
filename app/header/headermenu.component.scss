@@ -1,0 +1,107 @@
+@import "../../styles/vars";
+
+ .headermenu{
+        margin-top: $space-small;
+        margin-bottom: $space-half;
+
+         .headermenu-flexcontainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-direction: row;
+            
+        }
+
+
+        .btn-transparent {
+            color: $color-white;
+        }
+
+        .header-menu {
+
+         }
+
+        .header-menu-popup {
+            display: none;
+        }
+
+
+         
+
+    }
+    
+    .headermenu-mobile {
+        display: none;
+    }
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : $sm-max) {
+
+    .headermenu {
+        
+        .header-menu-popup {
+            display: flex;
+        }
+        .header-menu {
+            display: none;
+        }
+
+
+    }
+
+    .headermenu-mobile {
+        display: block;
+        z-index: 10000;
+        position: fixed;
+        left: 0;
+        right: $sm-max;
+        top: 0;
+        bottom: 0;
+        background-color: $color-blue-plus1;
+        background-image: url("../../img/blue.png");
+        background-repeat:no-repeat;
+        background-size:100% 100%;
+        overflow: hidden;
+        transition: right 0.2s ease-in-out 0s;
+
+        .headermenu-mobile-flexcontainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: column;
+
+            .flexitem {
+                padding-top: $space-small;
+                width: 100%;
+                text-align: center;
+
+
+            }
+
+            .webdes {
+                padding-bottom: $space-small;
+
+            }
+            .logo {
+                padding-top: $space-medium;
+
+                img {
+                    height: 75px;
+                }
+
+            }
+        }
+    }
+
+    .headermenu-mobile-show {
+        right: 50px;
+    }
+
+}
+
+@media only screen and (max-width : $xs-max) {
+    right: $xs-max;
+}

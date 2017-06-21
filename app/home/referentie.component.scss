@@ -1,0 +1,133 @@
+@import "../../styles/vars";
+@import "../../styles/mixins";
+
+.referentie {
+    text-align: left;
+    margin-bottom: $space-xlarge;
+            
+    
+
+    .referentie-image {
+        position: relative;
+                     color: $color-white;
+        overflow: hidden;
+        height: 400px;
+
+
+  
+
+            
+
+
+
+        .referentie-image-glow {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: $color-blue;
+            background: linear-gradient(to bottom, rgba(12,55,112,0.25), rgba(12,55,112,0.95) );
+      
+
+            opacity: 0;
+
+
+            transition: opacity 600ms linear;
+        }
+
+
+            .ref-naam 
+            {
+                    position: absolute;
+                    left: $space-small;
+                    font-size: $font-h3;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    bottom: -30px;
+                    transition: bottom 300ms ease-out;
+                   
+                
+            }
+
+            .ref-info{
+                position: absolute;
+                bottom: -30px;
+                left: $space-small;
+                font-size: $font-text-plus1;
+                text-transform: uppercase;
+                font-weight: bold;
+
+                 transition: bottom 300ms ease-out 100ms;
+            }
+
+            .ref-place {
+                 position: absolute;
+                bottom: -30px;
+                left: $space-small;
+                font-size: $font-text;
+                 transition: bottom 300ms ease-out 200ms;
+                
+            }
+            .ref-link {
+                position: absolute;
+                bottom: -30px;
+                left: $space-small;
+                font-size: $font-text;
+                 transition: bottom 300ms ease-out 300ms;
+                
+                a  {
+                    color: $color-orange;
+                    text-decoration: none;
+                }
+                a:hover {
+                    color: $color-orange-min2;
+                }
+            }
+        }
+
+
+    
+        img {
+            width: 100%;
+            transition: all 300ms ease-out;
+            
+        }
+
+    
+
+   
+}
+
+.referentie:link,
+.referentie:hover, .referentie:active
+{
+    .referentie-image-glow { 
+        opacity:1;
+    }
+
+
+    .ref-naam {
+        bottom: 145px;
+    }
+
+    .ref-info { 
+        bottom: 90px;
+    }
+    .ref-place { 
+        bottom: 65px;
+    }
+    .ref-link { 
+       bottom: 25px;
+    }
+
+
+    img{ 
+        transform: scale(1.3);
+        //filter:blur(1px);
+    }
+
+} 
+
+
+
+

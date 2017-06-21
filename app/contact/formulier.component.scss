@@ -1,0 +1,45 @@
+@import "../../styles/vars";
+
+.formulier {
+    text-align: left;
+
+
+
+    .error-boven {
+
+        padding-bottom: $space-medium;
+    }
+
+    .cta-container {
+        padding-top: $space-medium;
+        display: flex;
+        align-items: center;
+        
+        .cta {
+
+        }
+
+        .cta-error {
+            text-align: right;
+            flex: 1;
+        }
+    }
+
+    .verzonden {
+        font-style: italic;
+
+        .verzonden-aanspreking {
+            
+        }
+        .verzonden-body {
+            padding-top: $space-small;
+            padding-bottom: $space-small;
+        }
+        .verzonden-footer {
+
+        }
+    }
+
+
+
+}

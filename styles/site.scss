@@ -1,0 +1,143 @@
+//fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
+
+
+@import "vars";
+@import "button";
+@import "webdes";
+@import "mixins";
+@import "forms";
+@import "animations";
+
+
+
+
+
+
+
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: $color-white;
+    color: $color-gray-plus3;
+    letter-spacing: 1px;
+    font-size: $font-text;    
+    line-height: 170%;
+    text-align: left;
+    
+    overflow-x: hidden;
+    
+
+
+}
+
+@mixin page-row() {
+    text-align: center;
+}
+  
+.page-row {
+    @include page-row();
+    padding-top: $space-large;
+    padding-bottom: $space-xlarge;
+
+
+}
+.page-row-no-space {
+    @include page-row();
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.page-row-no-space-top {
+    @include page-row();
+    padding-top: 0;
+    padding-bottom: $space-xlarge;
+
+}
+
+
+
+.flex {
+    flex: none;
+}
+.flex-1 {
+    flex: 1;
+}
+
+h1 {
+    text-align: center;
+    font-size: $font-h1;
+    margin-bottom: $space-large;
+    margin-top: 0;
+    padding: 0;
+    color: $color-green;
+    font-family: 'Raleway', sans-serif; 
+
+}
+h2 {
+    text-align: center;
+    font-size: $font-h2;
+      margin-top: 0;
+    padding: 0;
+    margin-bottom: $space-large;
+
+}
+h3 {
+    text-align: center;
+    font-size: $font-h3;
+      margin-top: 0;
+    padding: 0;
+    margin-bottom: $space-medium;
+
+}
+
+
+a {
+    color: $color-green-min2;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: $color-orange;
+}
+
+
+.height-small
+{
+    height: $space-small;
+
+}
+.height-xlarge
+{
+    height: $space-xlarge;
+
+}
+.height-large
+{
+    height: $space-large;
+
+}
+.width-small
+{
+    width: $space-small;
+
+}
+
+
+
+.container-fluid
+{
+    overflow: hidden;
+}
+
+
+@media screen and (min-width: $md-min) {
+    .container-fluid
+    {
+        max-width: 1800px;
+        margin-left: $space-medium;
+        margin-right: $space-medium;
+        
+    }
+}
+
+

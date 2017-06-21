@@ -1,0 +1,25 @@
+@import "../../styles/vars";
+
+.footer-webdes {
+    font-size: $font-text-min1;
+    padding-top: $space-small !important;    
+    padding-bottom: $space-small !important;
+    color: $color-green;
+    background-color: $color-green-min3;
+
+
+    .webdes {
+        text-align: right;
+    }
+
+    a {
+        color: $color-green;
+        text-decoration: none;
+    }
+    a:hover {
+        color: $color-green-plus2;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+}

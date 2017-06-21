@@ -1,0 +1,26 @@
+<div class="portfolio">
+        
+    <div class="page-row">
+        <div class="container intro">
+            <wd-pageheader header="Portfolio"></wd-pageheader>
+            <div class="row">
+                <div class="col-md-12">
+                    Jouw website hier ook tonen? Aarzel dan niet om <a [routerLink]="['/contact']">contact</a> op te nemen.
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="page-row-no-space">
+        <div class="container">
+            <div class="row referenties">
+                <wd-referentie *ngFor="let ref of referenties" [referentie]="ref"> </wd-referentie>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+

@@ -1,0 +1,34 @@
+@import "../../styles/vars";
+
+
+.headline{
+    text-align: center;
+
+
+
+    .headline-header {
+        font-size: $font-text-plus4;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $color-green;
+        padding-bottom: $space-medium;
+
+
+    }
+
+    .headline-icon{
+        padding-top: $space-small;
+        padding-bottom: $space-small;
+        img {
+            height: 75px;
+        }
+
+    }        
+    .headline-text{
+        text-align: left;
+        padding-top: $space-medium;
+    }
+
+
+   
+}    

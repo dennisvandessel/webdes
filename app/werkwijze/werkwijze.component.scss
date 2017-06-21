@@ -1,0 +1,86 @@
+@import "../../styles/vars";
+
+
+@mixin werkwijze-step-word() {
+                font-size: $font-h2;
+                padding-left: $space-large;
+                color: $color-green-min4;
+                padding-bottom: $space-medium;
+                padding-right: $space-medium;
+}
+
+
+
+.werkwijze {
+
+    
+
+    .intro {
+        text-align: left;
+    }
+
+    .steps {
+       
+       text-align: left;    
+
+
+       .step {
+           padding: $space-medium;
+           background-color: $color-green;
+           //background: linear-gradient(to bottom right, $color-green-min2, $color-green);
+           background-image: url("../../img/green.png");
+        background-repeat:no-repeat;
+        background-size:100% 100%;
+           text-align: left;
+           min-height: 350px;
+           overflow-x: hidden;
+           
+           .title
+           {   
+                font-size: $font-h1;
+                color: $color-orange;
+                padding-bottom: $space-large;
+                padding-left: $space-medium;
+                padding-right: $space-medium;
+           }
+           .word {
+                @include werkwijze-step-word();
+               
+           }
+           .word-2 {
+                @include werkwijze-step-word();
+              
+           }
+       }
+
+       .step-detail {
+           padding: $space-large;
+           text-align: left;
+           background-color: $color-gray-min4;
+
+       }
+
+
+    }
+
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : $sm-min) {
+        //same height for bootstrap cols
+        .equal-height {
+        display: flex;
+        }
+
+        .equal-height > div[class*='col-'] {  
+        display: flex;
+        flex-direction: column;
+        }
+    }
+
+}
+
+
+    
+
+
+

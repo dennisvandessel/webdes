@@ -1,0 +1,23 @@
+<div class="page-row referenties-home">  
+    <div class="container">
+         <wd-pageheader header="Realisaties"></wd-pageheader>
+ 
+            <div class="row referenties">
+                <wd-referentie *ngFor="let ref of referenties" [referentie]="ref"> </wd-referentie>
+
+            </div>
+            <div class="referenties-all">
+
+                 <button class="btn-arrow" (click)="gotoPortfolio()">
+                            <div>
+                                Meer realisaties bekijken<i class="fa fa-arrow-right"></i>
+                            </div>
+                        </button>
+                              
+                
+
+            </div>
+
+    </div>    
+   
+</div>

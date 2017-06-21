@@ -1,0 +1,79 @@
+@import "../../styles/vars";
+
+.about {
+
+    .over-mij {
+        text-align: left ;
+
+        .focus {
+            //font-size: $font-text-plus2;
+            color: $color-blue-min2;
+            font-style: italic;
+                    }
+        .passie {
+           font-size: $font-text-plus2;
+  
+            color: $color-blue-min2;
+            font-style: italic;
+        }
+    }
+
+    .dennis{
+        
+        img {
+                @media only screen and (max-width : $sm-max){
+                    margin-top: $space-small;
+                }  
+        }
+
+        background-color: $color-blue-min2;
+        background-image: url("../../img/blue-min1.png");
+        background-repeat:no-repeat;
+        background-size:100% 100%;
+
+        .quote {
+          
+
+
+        }
+
+        .quote-container {
+            display: flex;
+            padding-top: $space-large;
+            padding-bottom: $space-medium;
+     
+            
+        }
+
+        .quote-icon-left {
+            color: $color-blue;
+            text-align: left;
+            font-size: 25px;
+            
+        }
+         .quote-icon-right {
+            color: $color-blue;
+            align-self: flex-end;
+            text-align: right;
+            font-size: 25px;
+        }
+        .quote-text {
+            color: $color-white;
+            font-size: $font-text-plus2;
+            text-align: left;
+            padding-left: $space-small;
+            padding-right: $space-small;
+            padding: $space-small;
+            
+        }
+
+        img {
+            height: 275px;      
+        }
+    }
+
+    .ervaring {
+
+    }
+  
+}

@@ -1,0 +1,124 @@
+@import "../../styles/vars";
+
+
+
+.home .intro {
+        
+        text-align: center;
+        background:  $color-blue-plus2;
+           background-image: url("../../img/webdesign_intro.jpg");
+           background-position: center;
+           background-size: cover;
+           background-repeat: no-repeat;
+           position: relative;
+
+           .intro-overlay {
+               position: absolute;
+               left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+
+              
+                background: linear-gradient(to bottom, rgba(12,55,112,0.15),rgba(12,55,112,0.20), rgba(12,55,112,0.25),rgba(12,55,112,0.45) );
+           }
+
+       .intro-line1 {
+
+       }
+
+
+        .intro-flexcontainer {
+
+            display: flex;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .intro-word-container {
+            margin-top: 85px;
+            text-decoration: uppercase;
+
+            font-size: 66px;
+            font-weight: bold;
+            color: $color-orange-plus2;
+            position: relative;
+            width: 100%;
+            letter-spacing: 5px;
+
+            /* Small Devices, Tablets */
+            @media only screen and (max-width : $sm-max) {
+                
+                font-size: 62px;
+            }
+            /* Extra Small Devices, Phones */ 
+            @media only screen and (max-width : $xs-max){
+                letter-spacing: 2px;
+                font-size: 28px;
+            }
+         
+
+            .intro-word {
+                display: hidden;
+                position: absolute;
+                top: 0;
+                left: -100px;
+                right: 100px;
+                opacity: 0;
+                transition: opacity 500ms linear,
+                            left 650ms ease-out,
+                            right 650ms ease-out;
+            }
+
+            .intro-word-start {
+                display: visible;
+                opacity: 1;
+                left: 0;
+                right: 0;
+                z-index: 100;
+            }
+            
+            .intro-word-stop {
+                opacity: 0;
+                left: 100px;
+                right: -100px;
+                z-index: 50;
+            }
+
+        }
+        
+       .intro-line3 {
+            font-size: 46px;
+            letter-spacing: 2.5px;
+
+            color: $color-orange-plus2;
+            padding-top: $space-large;
+            padding-bottom: $space-large;
+
+            /* Extra Small Devices, Phones */ 
+            @media only screen and (max-width : $xs-max){
+                
+                padding-top: $space-medium;
+            }
+       }
+
+       .contact {
+           padding-top: 75px;
+           
+            padding-bottom:185px;
+                       /* Small Devices, Tablets */
+            @media only screen and (max-width : $sm-max) {
+                
+                padding-bottom:100px;
+            }
+            /* Extra Small Devices, Phones */ 
+            @media only screen and (max-width : $xs-max){
+                padding-bottom:25px;
+            }
+       }
+
+       
+      
+
+    }

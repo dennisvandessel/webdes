@@ -1,0 +1,30 @@
+   
+<div class="col-md-4 referentie" onclick="return 0;">
+
+     <div invp [invp-animation]="referentie.animation" [invp-delay]="referentie.delay"> 
+    
+        <div class="referentie-image">
+                <img src="{{referentie.image}}" alt="{{referentie.imageText}}">
+                <div class="referentie-image-glow"></div>
+
+                    <div class="ref-naam">
+                            {{referentie.name}}
+                         </div>
+                    <div class="ref-place">{{referentie.place}}</div>
+                    <div class="ref-info">{{referentie.info}}</div>
+                    <div class="ref-link">
+                        <a target="_blank" [href]="getReferentieUrl()"> 
+                            {{referentie.url}}
+                        </a>
+                    </div> 
+                                   
+                <div class="referentie-naam-back"></div>
+                      
+                
+
+            </div>
+        </div>
+
+
+   
+</div>

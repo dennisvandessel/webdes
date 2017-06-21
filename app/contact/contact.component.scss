@@ -1,0 +1,91 @@
+@import "../../styles/vars";
+
+
+@mixin contact-icon-container() {
+    margin-left: $space-large;
+    position: relative;
+}
+
+
+.contact {
+    
+    .formulier {
+
+    }
+
+   
+
+    .info {
+         background-color: $color-gray-min4;
+         
+          .adres {
+                text-align: left;
+
+                .adres-velden {
+                }
+         
+         
+                i.icon {
+                    position: absolute;
+                    left: -$space-large;
+                }
+
+                .naam1 {
+                    font-size: $font-text-plus1;
+                    font-weight: bold;
+
+                }
+                .naam2 {
+                    font-size: $font-text-min1;
+                    font-style: italic;
+                    padding-bottom: $space-medium;
+
+                }
+                .adres1 {
+                    @include contact-icon-container();
+
+                }
+                .adres2 {
+                    @include contact-icon-container();
+                    padding-bottom: $space-medium;
+                }
+                .mail {
+                    @include contact-icon-container();
+                    padding-bottom: $space-medium;
+
+                    i.icon {
+                        top: -5px;
+                    }
+                }
+                .tel {
+                    @include contact-icon-container();
+                    padding-bottom: $space-medium;
+
+
+                }
+                .volgmij {
+                    padding-top: $space-small;
+                    font-size: $font-text-min1;
+                    font-style: italic;
+                    padding-bottom: $space-small;
+                }
+                .volgmijop {
+
+                    
+                }
+            }
+
+            .kaart {
+                height: 415px;
+
+                    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : $sm-max){
+        margin-top: $space-medium;
+    }
+            }
+
+
+    }
+    
+
+}

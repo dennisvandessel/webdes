@@ -1,0 +1,121 @@
+@import "../../styles/vars";
+
+.prijzen {
+    
+    .intro {
+        text-align: left;
+    }
+
+    .kosten {
+        text-align: left !important;
+       
+        .kost {
+             color: $color-white;
+             padding: $space-medium;
+             position: relative;
+        }
+
+        .kost-creatie {
+                    background-color: $color-orange-min2;
+            background-image: url("../../img/orange.png");
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+
+            margin-right: $space-half;
+            
+            /* Extra Small Devices, Phones */ 
+            @media only screen and (max-width : $sm-max){
+                margin-right: 0;
+                
+            }
+
+    
+                   }
+
+        .kost-hosting {
+                                background-color: $color-blue;
+            background-image: url("../../img/blue.png");
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+
+             margin-right: $space-half;
+              margin-left: $space-half;
+            
+            /* Extra Small Devices, Phones */ 
+            @media only screen and (max-width : $sm-max){
+                margin-right: 0;
+                margin-left: 0;
+                margin-top: $space-small;
+            }
+        }
+
+        .kost-extra {
+            
+             margin-left: $space-half;
+            
+            background-color: $color-green;
+            background-image: url("../../img/green.png");
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+
+                        /* Extra Small Devices, Phones */ 
+            @media only screen and (max-width : $sm-max){
+                margin-left: 0;
+                margin-top: $space-small;
+            }
+
+
+        }
+
+        .title {
+            font-size: $font-h1;
+            padding-bottom: $space-large;
+            padding-top: $space-small;
+
+        }
+
+        .prijs {
+            padding-top: 25px;
+            height: 120px;
+            font-size: $font-text-min2;
+
+            span.bedrag {
+                font-size: $font-text-plus3;
+            }
+            padding-bottom: $space-large;
+            z-index: 888;
+
+        }
+        
+        .prijsshade {
+            position: absolute;
+            background-color: $color-white;
+            top: 120px;
+            left: 0;
+            right: 0;
+            height: 100px;
+            opacity: 0.1;
+        }
+
+
+
+        .info {
+            padding-top: $space-small;
+            text-align: left;
+        }
+    }
+
+        /* Medium Devices, Desktops */
+    @media only screen and (min-width : $md-min) {
+        //same height for bootstrap cols
+        .equal-height {
+        display: flex;
+        }
+
+        .equal-height > div[class*='col-'] {  
+        display: flex;
+        flex-direction: column;
+        }
+    }
+
+}

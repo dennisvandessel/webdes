@@ -1,0 +1,28 @@
+<div class="timeitem">
+    
+    <div class="circle">
+        {{item.start}}
+    </div>
+    <div class="line"></div>
+    <div class="content" invp [invp-animation]="'fadeInLeft'">
+        <div class="arrow"></div>
+        <div class="header">
+            <div class="container">
+                <div class="name">{{item.name}}</div>
+                <div class="period">{{showPeriod()}}</div>
+            </div>
+            
+        </div>
+        <div class="detail">
+            {{item.info}}
+        </div>
+
+        <div *ngIf="!item.last" class="space">
+
+        </div>
+    </div>
+    
+</div>
+
+
+

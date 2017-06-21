@@ -1,0 +1,252 @@
+$duration: 0.7s;
+$durationPlus: 1.2s;
+
+$fadeInTranslate: 250px;
+$fadeInTranslateMin: 70px;
+
+
+
+
+
+   
+
+
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .animation-init {
+        opacity: 0;
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+    .animation-init {
+    }
+}
+/* Extra Small Devices, Phones */ 
+@media only screen and  (max-width : 767px){
+    .animation-init {
+    }
+}
+
+
+
+
+
+
+/* bounceIn */
+
+@mixin animation-bounceIn() {
+    opacity: 1 !important;
+    animation: bounceIn $duration linear;
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .animation-bounceIn {
+        @include animation-bounceIn();
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+    .animation-bounceIn {
+    }
+}
+/* Extra Small Devices, Phones */ 
+@media only screen and  (max-width : 767px){
+    .animation-bounceIn {
+    }
+}
+
+
+
+
+@keyframes bounceIn {
+    0% { 
+        opacity: 0; 
+        transform: scale(.3); 
+    } 
+    50% { 
+        opacity: 1; 
+        transform: scale(1.05); 
+    } 
+    70% { 
+        transform: scale(.9); 
+    } 
+    100% { 
+        transform: scale(1); 
+    } 
+} 
+
+
+/* fadeInUp */
+
+
+@mixin animation-fadeInUp() {
+    opacity: 1 !important;
+    animation: fadeInUp $duration ease-out;
+}
+
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .animation-fadeInUp {
+        @include animation-fadeInUp();
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+    .animation-fadeInUp {
+    }
+}
+/* Extra Small Devices, Phones */ 
+@media only screen and  (max-width : 767px){
+    .animation-fadeInUp {
+    }
+}
+
+
+ 
+
+
+@keyframes fadeInUp { 
+    0% { 
+        opacity: 0; 
+        transform: translateY($fadeInTranslate); 
+    } 
+    50%{
+       opacity: 0.3; 
+    }
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+} 
+
+/* fadeInRight */
+
+
+@mixin animation-fadeInRight() {
+    opacity: 1 !important;
+    animation: fadeInRight $duration ease-out;
+}
+
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .animation-fadeInRight {
+        @include animation-fadeInRight();
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+    .animation-fadeInRight {
+    }
+}
+/* Extra Small Devices, Phones */ 
+@media only screen and  (max-width : 767px){
+    .animation-fadeInRight {
+    }
+}
+
+
+
+@keyframes fadeInRight { 
+    0% { 
+        opacity: 0; 
+        transform: translateX(-$fadeInTranslate); 
+    } 
+    50%{
+       opacity: 0.3; 
+    }
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+} 
+// .animation-fadeInRightMin {
+//     opacity: 1 !important;
+//     animation: fadeInRightMin $duration ease-out;
+// }
+// @keyframes fadeInRightMin { 
+//     0% { 
+//         opacity: 0; 
+//         transform: translateX(-$fadeInTranslateMin); 
+//     } 
+//     50%{
+//        opacity: 0.3; 
+//     }
+//     100% { 
+//         opacity: 1; 
+//         transform: translateY(0); 
+//     } 
+// } 
+
+
+/* fadeInLeft */
+
+
+
+@mixin animation-fadeInLeft() {
+    opacity: 1 !important;
+    animation: fadeInLeft $duration ease-out;
+}
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .animation-fadeInLeft {
+        @include animation-fadeInLeft();
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+    .animation-fadeInLeft {
+    }
+}
+/* Extra Small Devices, Phones */ 
+@media only screen and  (max-width : 767px){
+    .animation-fadeInLeft {
+    }
+}
+
+
+
+
+@keyframes fadeInLeft { 
+    0% { 
+        opacity: 0; 
+        transform: translateX($fadeInTranslate); 
+    } 
+    50%{
+       opacity: 0.3; 
+    }
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+} 
+.animation-fadeInLeftMin {
+    opacity: 1 !important;
+    animation: fadeInLeftMin $duration ease-out;
+}
+@keyframes fadeInLeftMin { 
+    0% { 
+        opacity: 0; 
+        transform: translateX($fadeInTranslateMin); 
+    } 
+    50%{
+       opacity: 0.3; 
+    }
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+} 

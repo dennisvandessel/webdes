@@ -1,0 +1,40 @@
+//V1
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : $md-min) {
+
+    }
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : $sm-min) and (max-width : $sm-max) {
+
+    }
+    /* Extra Small Devices, Phones */ 
+    @media only screen and  (max-width : $xs-max){
+
+    }
+
+//V2
+    
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : $sm-max) {
+
+    }
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : $xs-max){
+
+    }
+
+
+
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : $md-min) {
+        //same height for bootstrap cols
+        .equal-height {
+        display: flex;
+        }
+
+        .equal-height > div[class*='col-'] {  
+        display: flex;
+        flex-direction: column;
+        }
+    }

@@ -1,0 +1,76 @@
+<div class="formulier">
+        
+     <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+
+
+                    <div *ngIf="formIsVerzonden" class="verzonden">
+                        <div class="verzonden-aanspreking">Beste {{aanspreking}},</div>
+                        <div class="verzonden-body">Uw bericht werd succesvol verzonden en wordt zo spoedig mogelijk verwerkt.</div>
+                        <div class="verzonden-footer">Dennis.</div>
+                    </div>
+                    
+                    <form *ngIf="!formIsVerzonden" #contactForm="ngForm" novalidate>
+                        
+                        <div *ngIf="toonAlgemeneError(contactForm)" class="error-boven has-error">
+                            <div class="control-label">
+                                Gelieve alle velden correct in te vullen
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group" [class.has-error]="toonLabelError(contactForm?.controls?.naam)">
+                                    <label class="control-label" for="naam">Uw naam</label>
+                                    <input class="form-control" placeholder="Uw naam" (ngModel)="naam" name="naam" id="naam" required>
+                                     <div class="control-label fout-label">Dit is een verplicht veld</div>
+                                </div>
+                                <div class="form-group" [class.has-error]="toonLabelError(contactForm?.controls?.email)">
+                                    <label class="control-label" for="email">Uw e-mail adres</label>
+                                    <input class="form-control" placeholder="Uw e-mail adres" (ngModel)="email" name="email" id="email" required type="email">
+                                     <div class="control-label fout-label">Dit is een verplicht veld</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group" [class.has-error]="toonLabelError(contactForm?.controls?.bericht)">
+                                    <label class="control-label" for="bericht">Bericht</label>
+                                    <textarea class="form-control" placeholder="Bericht" rows="8" (ngModel)="bericht" id="bericht" name="bericht" required></textarea>
+                                     <div class="control-label fout-label">Dit is een verplicht veld</div>
+                                    
+                        </div>
+
+
+
+
+
+                        <div class="cta-container">
+
+                            <button class="btn-arrow" (click)="verzenden(contactForm, contactForm.value)">
+                                    <div>
+                                        Bericht verzenden<i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </button>
+
+
+                            <div *ngIf="toonAlgemeneError(contactForm)" class="cta-error has-error">
+                                <div class="control-label">
+                                    Gelieve alle velden correct in te vullen
+                                </div>
+
+                            </div>
+                            
+                        </div>
+
+                      
+                    </form>            
+                </div>
+
+    </div>
+            
+
+
+</div>
+
+

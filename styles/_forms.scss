@@ -1,0 +1,9 @@
+.fout-label {
+    font-size: $font-text-min1;
+    display: none;
+}
+.has-error {
+    .fout-label {
+        display: block;
+    }
+}

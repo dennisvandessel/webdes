@@ -1,0 +1,58 @@
+@import "../../styles/vars";
+
+.follow {
+    
+  .flexcontainer {
+            display: flex;
+            
+
+        }
+
+        .flex {
+            padding-left: 0;
+            padding-right: 0;
+            position: relative;
+        
+            .popup {
+
+                    /* Small Devices, Tablets */
+                @media only screen and (max-width : $sm-max) {
+                        display: none;
+                }
+
+
+                position: absolute;
+                background-color: $color-orange;
+                color: $color-white;
+                white-space: nowrap;
+                top: 60px;
+                height: 0;
+                text-align: center;
+                font-size: $font-text-min2;
+
+                border-radius: 8px;
+                font-style: italic;
+                overflow: hidden;
+                z-index: 888;
+
+                transition: height 0.2s ease-in-out 0s;
+                
+                .text {
+                    padding-top: 2px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+
+                }
+            }
+        }
+
+        a:hover {
+
+            .popup {
+                height: 33px;;
+                z-index: 999;
+            }
+        }
+
+
+}

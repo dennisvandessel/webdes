@@ -1,0 +1,41 @@
+<div class="page-row footer">
+    <div class="container">
+   
+        <div class="col-md-4 menu">
+            
+            <div class="flexcontainer">
+                <div *ngFor="let item of menuitems" class="flexitem">
+
+                        <a [routerLink]="[item.path]" routerLinkActive="menuitem-active" [routerLinkActiveOptions]="{exact: true}">
+                            <i class="fa fa-angle-right hidden-xs hidden-sm" aria-hidden="true"></i> {{item.label}}
+                            </a>
+                    
+                </div>
+            </div>
+            
+
+        </div>
+        <div class="col-md-4 logo">
+            <div class="logo-image">
+                <img src="../../img/webdes_logo_green.png" alt="logo webdes"> 
+            </div>
+            <div>
+                <span class="webdes-logo">WEBDES</span><span class="webdes-logo-ign">ign</span>           
+            </div>
+
+        </div>
+
+<div class="height-large visible-xs-block visible-sm-block"></div>
+
+        <div class="col-md-4 follow-section">
+            <div class="volg-mij">Volg mij</div>
+           <wd-follow></wd-follow>
+
+
+        </div>
+    </div>
+</div>
+
+
+<wd-webdes></wd-webdes>
+

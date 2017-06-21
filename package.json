@@ -1,0 +1,52 @@
+{
+  "name": "Webdes",
+  "version": "1.0.0",
+  "description": "Webdesign Dennis Van Dessel",
+  "dependencies": {
+    "@angular/common": "^2.4.3",
+    "@angular/compiler": "^2.4.3",
+    "@angular/compiler-cli": "^4.2.3",
+    "@angular/core": "^2.4.3",
+    "@angular/forms": "^2.4.3",
+    "@angular/http": "^2.4.3",
+    "@angular/platform-browser": "^2.4.3",
+    "@angular/platform-browser-dynamic": "~2.4.0",
+    "@angular/platform-server": "^4.2.3",
+    "@angular/router": "^3.4.3",
+    "@types/lodash": "^4.14.54",
+    "bootstrap": "^3.3.7",
+    "core-js": "^2.4.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1",
+    "lodash": "^4.17.4",
+    "moment": "^2.17.1",
+    "reflect-metadata": "^0.1.9",
+    "rxjs": "^5.0.3",
+    "zone.js": "^0.7.6"
+  },
+  "devDependencies": {
+    "@types/node": "^7.0.4",
+    "autoprefixer-loader": "^3.2.0",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "node-sass": "^3.13.0",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "svg-url-loader": "^1.1.0",
+    "ts-loader": "^1.2.2",
+    "tsd": "^0.6.5",
+    "typescript": "^2.0.10",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-notifier": "^1.4.1"
+  },
+  "scripts": {
+    "build": "webpack --color",
+    "build:watch": "webpack --watch --color",
+    "build:prod": "webpack -p --color"
+  },
+  "author": "Dennis Van Dessel",
+  "license": "WebDes"
+}

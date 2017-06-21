@@ -1,0 +1,33 @@
+
+
+
+<div class="page-row intro">
+    <div class="intro-overlay"></div>
+    <div class="container">
+        <div class="col-md-12">
+               
+                <div class="intro-line2 intro-word-container">
+                    <span style="visibility: hidden">&nbsp;</span>
+                    <div *ngFor="let item of introSettings" class="intro-word" [class.intro-word-start]="item.classWordStart" [class.intro-word-stop]="item.classWordStop">{{item.label}}</div>
+                </div>  
+            
+                <div class="intro-line3">WEBSITES</div>
+                <div class="contact">
+                  
+
+                         <button class="btn-arrow btn-transparent" (click)="gotoContact()">
+                            <div>
+                                Contacteer WEBDES<i class="fa fa-arrow-right"></i>
+                            </div>
+                        </button>
+                    
+                </div>
+
+                
+        </div>
+    </div>     
+</div>
+
+
+                     
+                    
